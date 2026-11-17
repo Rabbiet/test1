@@ -1,95 +1,26 @@
-/* Mengatur ulang margin dan padding bawaan browser */
-* {
+body {
+    background-color: #f5f7fa; 
+    font-family: Arial, sans-serif;
+    color: #333333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* Mengganti warna merah menyala (#ff3b47) dengan gradien abu-abu kebiruan yang lembut */
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    
-    /* Menggunakan font sistem yang lebih modern */
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    
-    /* Mengganti warna hijau neon (#60ff00) dengan abu-abu gelap agar kontras teks mudah dibaca */
-    color: #333333; 
-    
-    /* Membuat kartu tepat berada di tengah layar secara vertikal dan horizontal */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    text-align: center;
 }
 
 .kartu-profil {
-    width: 350px; /* Sedikit diperlebar dari 333px agar konten lebih leluasa */
-    padding: 40px 30px; 
-    background-color: #ffffff; /* Memperbaiki typo 'background color' */
-    border-radius: 20px; /* Memperbaiki typo 'border-radis' dan memperhalus lengkungan */
-    
-    /* Memperbaiki typo pada 'rgba(0,0,0,0,1)' dan memperhalus efek bayangan agar terlihat melayang */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
-    
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radis: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1;
     text-align: center;
-    transition: transform 0.3s ease; /* Menambahkan animasi transisi */
-}
-
-/* Menambahkan efek saat kartu disorot kursor (hover) */
-.kartu-profil:hover {
-    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 .kartu-profil img {
     width: 120px; 
-    height: 120px; /* Memastikan rasio gambar seimbang */
-    border-radius: 50%; /* Mengubah bentuk dari 20% menjadi lingkaran sempurna */
-    object-fit: cover; /* Mencegah gambar terlihat gepeng */
-    border: 4px solid #ffffff; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Memberi bayangan kecil pada foto */
-    margin-bottom: 15px;
-}
-
-/* === TAMBAHAN UNTUK MERAPIKAN ELEMEN TEKS DAN TOMBOL DI HTML === */
-
-.kartu-profil h1 {
-    font-size: 22px;
-    color: #1a1a1a;
-    margin-bottom: 8px;
-}
-
-.kartu-profil p {
-    font-size: 14px;
-    color: #666666;
-    margin-bottom: 20px;
-}
-
-.kartu-profil a {
-    display: inline-block;
-    text-decoration: none;
-    color: #007bff; /* Warna biru untuk tautan */
-    font-size: 14px;
-    margin-bottom: 25px;
-    transition: color 0.3s;
-}
-
-.kartu-profil a:hover {
-    color: #0056b3; /* Tautan berubah warna saat disorot */
-}
-
-.kartu-profil button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 25px; /* Membuat tombol berbentuk pil (bulat di ujung) */
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.kartu-profil button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05); /* Tombol sedikit membesar saat disorot */
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
