@@ -5,10 +5,6 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    display: flex;
-    justify-content: center; /* Menengahkan kiri-kanan */
-    align-items: center;     /* Menengahkan atas-bawah */
-    min-height: 100vh;
 }
 
 .kartu-profil {
